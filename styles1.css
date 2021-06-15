@@ -1,0 +1,209 @@
+#list img{
+display:inline-block;
+width:20%;
+border-radius:10%;	
+}
+#list1 img{
+display:inline-block;
+border-radius:10%;	
+}
+.b1
+{
+float:left;
+margin-top:3%;
+margin-left:5%;
+}
+.b2
+{
+float:right;
+margin-top:1%;
+}
+.b3
+{
+float:center;
+margin-top:3%;
+}
+
+body{
+    background: linear-gradient(90deg,black,darkblue);
+    font-family: cursive;
+    height:20%; 
+}
+h3{
+    font-weight: normal;
+    font-family: cursive;
+    font-size: 80%;  
+}
+h2
+{
+    font-weight:bold;
+text-align: center;
+}
+#marquee marquee img
+{
+	width:50%;
+	height:50%;
+	border-radius:0%;
+}
+
+#tabmessage{
+    margin-top: 1%;
+    border-radius: 2%;
+	float:left;
+    background-image:url("acc.jpg");
+    width: 50%;
+    height:50%;
+    
+}
+#tabmessage1{
+    margin-top: 1%;
+    border-radius: 2%;
+	float:left;
+    background-image:url("acc.jpg");
+    width: 50%;
+    height:50%;
+    
+}
+#commentaire1
+{
+	float:right;
+	margin-top:2%;
+	width:auto;
+	height: auto;
+}
+#news{
+	box-sizing: border-box;
+	height: 50%;
+	font-size: large;
+	font-weight: bold;
+	width: 35%;
+	background-image:url("images/samglish.png");
+	margin-top: 3%;
+	margin-left: 1%;
+	border-radius: 10%;
+	text-align: center;
+	padding: 1%;
+}
+#news a{
+	color:black;
+	font-weight: bold;
+}
+#new{
+	font-weight: bold;
+	height: 100%;
+	width: 100%;
+	font-size: 150%;
+	box-shadow: 5px 5px 5px SlateBlue;
+}
+
+input{
+    font-size: 80%;
+    display: block;
+    font-family: cursive;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 1%;
+}
+
+}
+a {
+font-weight: normal;
+color:darkorange;
+}
+a:hover{
+    color:darkviolet;
+}
+#fixe{
+	display: block;
+	width: 100%;
+	text-align: center;
+	align-content: center;
+}
+#men{
+    width: 100%; 
+    background: linear-gradient(90deg, DarkSlateBlue, white);
+}
+
+nav li{
+	list-style-type: none;
+}
+nav >ul > li{
+	float: left;
+	position: relative;
+}
+/*les elts ul auront pour hauteur 0px car pas floatant et
+ses enfants sont floatant alors on peut remedier le pb
+on utilisera le pseudo elt after*/
+nav> ul::after{
+	content: "";
+	display: block;
+	clear: both;
+} 
+nav > ul > li > a{
+	padding: 20px 30px;
+	/*20 px haut/bas et 30px gche/dte*/
+	color: #FFF;
+}
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+	/* on a fait -5px du bottom pour compenser le 5px du
+	border-bottom*/
+}
+.submenu{
+	display: none;
+}
+h1{
+	font-size: 40px;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 140px;
+}
+.class{
+	width: 100%;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;/*pour etre au pied de son parent 
+						relative*/
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 10000;/*pour etre au dessus d'autres elts*/
+}
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+.submenu li a{
+	padding: 5px 30px;
+	color:white;
+	width: 86px;
+}
+.menu:hover{
+	border-top: 5px solid #FFF;
+	background-color: rgba(228, 77, 38, 0.15);
+}
+.menu .submenu{
+	background-color: slateblue;
+}
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+.submenu li:hover{
+	background-color: darkgrey;
+}
+header{
+	box-sizing: content-box;
+	display: flex;
+	width: 100%;
+	height: 85px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: cursive;
+	font-style: italic;
+	text-shadow: 2px 3px 3px SlateBlue;
+}
